@@ -17,6 +17,12 @@ import ClinicDoctorsPage from "./pages/ClinicDoctorsPage";
 import Contactus from "./pages/ContactUS";
 import TermsOfService from "./pages/TermsOfService";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
+// Pharmacy Pages
+import {
+  PharmaciesPage,
+  PharmacyDetailsPage,
+  MedicineDetailsPage,
+} from "./pages/pharmacy";
 
 function App() {
   const { user, loading } = useContext(UserContext);
@@ -31,6 +37,13 @@ function App() {
           <Route path="/privacy" element={<PrivacyPolicy />} />
           <Route path="/clinics" element={<ClinicsVisitorsPage />} />
           <Route path="/clinic/:id/doctors" element={<ClinicDoctorsPage />} />
+          {/* Pharmacy Routes */}
+          <Route path="/pharmacy" element={<PharmaciesPage />} />
+          <Route path="/pharmacy/:id" element={<PharmacyDetailsPage />} />
+          <Route
+            path="/pharmacy/:id/medicine/:medicineId"
+            element={<MedicineDetailsPage />}
+          />
           <Route
             path="/login"
             element={user ? <Navigate to="/dashboard" /> : <Login />}
