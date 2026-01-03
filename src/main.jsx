@@ -9,7 +9,7 @@ import { UserProvider } from "./Contexts/UserProvider.jsx";
 
 createRoot(document.getElementById("root")).render(
   // <StrictMode>
-  <BrowserRouter basename="/mega">
+  <BrowserRouter basename="/Invose">
     <UserProvider>
       <App />
     </UserProvider>
