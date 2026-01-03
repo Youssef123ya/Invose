@@ -12,7 +12,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
-  "homepage": "https://teamdepi.github.io/mega",
+  "homepage": "https://youssef123ya.github.io/Invose",
   "dependencies": {
     "@tailwindcss/vite": "^4.1.16",
     "bootstrap": "^5.3.8",
